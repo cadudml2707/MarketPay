@@ -2,20 +2,14 @@ package classes;
 
 public class User {
     
-    private int id;
     private String nome;
     private String email;
     private String senha;
 
-    public User(int id, String nome, String email, String senha){
-        this.id=id;
+    public User(String nome, String email, String senha){
         this.nome=nome;
         this.email=email;
         this.senha=senha;
-    }
-
-    public int getId(){
-        return id;
     }
 
     public String getNome(){
@@ -28,10 +22,6 @@ public class User {
 
     public String getSenha(){
         return senha;
-    }
-
-    public void setId(int id){
-        this.id=id;
     }
 
     public void setNome(String nome){
