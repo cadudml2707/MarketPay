@@ -2,24 +2,24 @@ package classes;
 
 public class Produto {
     
-    private int id;
     private String nome;
+    private int codigo;
     private float preco;
     private int quantidade;
 
-    public Produto(int id, String nome, float preco, int quantidade){
-        this.id=id;
+    public Produto(String nome, int codigo, float preco, int quantidade){
         this.nome=nome;
+        this.codigo=codigo;
         this.preco=preco;
         this.quantidade=quantidade;
     }
 
-    public int getId(){
-        return id;
-    }
-
     public String getNome(){
         return nome;
+    }
+
+    public int getCodigo(){
+        return codigo;
     }
 
     public float getPreco(){
@@ -30,12 +30,12 @@ public class Produto {
         return quantidade;
     }
 
-    public void setId(int id){
-        this.id=id;
-    }
-
     public void setNome(String nome){
         this.nome=nome;
+    }
+
+    public void setCodigo(int codigo){
+        this.codigo=codigo;
     }
 
     public void setPreco(float preco){
