@@ -12,7 +12,7 @@ public class ProdutoDAO {
         Produto produto = new Produto(nome, codigo, preco, quantidade);
         produtos.add(produto);
     }
-
+    
     public void buscarProduto(int codigo){
         for(Produto produto : produtos){
             if(produto.getCodigo() == codigo){
