@@ -1,25 +1,29 @@
 package classes;
 
+import java.time.LocalDateTime;
+
 public class Venda {
     
     private int id;
-    private String dataCompra;
+    private LocalDateTime dataCompra;
     private float total;
     private int qtd_itens;
+    private Cliente cliente;
+    private User user;
+    private ItensVenda itensVenda;
 
-    public Venda(int id, String data_compra, float total, int qtd_itens){
+    public Venda(int id, float total, int qtd_itens, Cliente cliente, User user, ItensVenda itensVenda){
         this.id=id;
-        this.dataCompra=data_compra;
+        this.dataCompra=LocalDateTime.now();
         this.total=total;
         this.qtd_itens=qtd_itens;
+        this.cliente=cliente;
+        this.user=user;
+        this.itensVenda=itensVenda;
     }
 
     public int getId(){
         return id;
-    }
-
-    public String getDataCompra(){
-        return dataCompra;
     }
 
     public float getTotal(){
@@ -32,10 +36,6 @@ public class Venda {
 
     public void setId(int id){
         this.id=id;
-    }
-
-    public void setDataCompra(String dataCompra){
-        this.dataCompra=dataCompra;
     }
 
     public void setTotal(float total){
