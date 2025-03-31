@@ -4,7 +4,7 @@ import classes.Produto;
 import java.util.List;
 import java.util.ArrayList;
 
-public class ProdutoDAO {
+public class ProdutoDAO { 
     
     private List<Produto> produtos = new ArrayList<>();
 
