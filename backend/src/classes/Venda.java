@@ -10,16 +10,14 @@ public class Venda {
     private int qtd_itens;
     private Cliente cliente;
     private User user;
-    private ItensVenda itensVenda;
 
-    public Venda(int id, float total, int qtd_itens, Cliente cliente, User user, ItensVenda itensVenda){
+    public Venda(int id, float total, int qtd_itens, Cliente cliente, User user){
         this.id=id;
         this.dataCompra=LocalDateTime.now();
         this.total=total;
         this.qtd_itens=qtd_itens;
         this.cliente=cliente;
         this.user=user;
-        this.itensVenda=itensVenda;
     }
 
     public int getId(){
