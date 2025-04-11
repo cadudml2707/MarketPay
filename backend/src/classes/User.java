@@ -7,10 +7,11 @@ public class User {
     private String senha;
     private String tipo;
 
-    public User(String nome, String email, String senha){
+    public User(String nome, String email, String senha, String tipo){
         this.nome=nome;
         this.email=email;
         this.senha=senha;
+        this.tipo=tipo;
     }
 
     public String getNome(){
