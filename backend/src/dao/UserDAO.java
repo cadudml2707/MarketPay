@@ -19,16 +19,18 @@ public class UserDAO {
                 user.getNome();
                 user.getEmail();
                 user.getSenha();
+                user.getTipo();
             }
         }
     }
 
-    public void atualizarUser(String nome, String email, String senha){
+    public void atualizarUser(String nome, String email, String senha, String tipo){
         for(User user : users){
             if(email == user.getEmail() && senha == user.getSenha()){
                 user.setNome(nome);
                 user.setEmail(email);
                 user.setSenha(senha);
+                user.setTipo(tipo);
             }
         }
     }
