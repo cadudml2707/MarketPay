@@ -28,18 +28,28 @@ Este sistema feito em Java e Typescript é uma aplicação web que executa funç
 ## 🖥️ Como instalar:
 
 Clone o repositório pelo terminal com o seguinte comando: 
-* git clone https://github.com/cadudml2707/MarketPay.git
+```
+git clone https://github.com/cadudml2707/MarketPay.git
+```
 
 Após a clonagem, acesse as pastas do projeto, selecione a pasta do frontend e instale as dependências do projeto:
-
-* cd MarketPay
-* cd frontend
-* npm install
+```
+ cd MarketPay
+```
+```
+cd frontend
+```
+```
+npm install
+```
 
 Quando a instalação for finalizada, retorne à pasta raiz e selecione a pagina do backend:
-
-* cd ..
-* cd backend
+```
+cd ..
+```
+```
+cd backend
+```
 
 -- CONFIGURAÇÕES DO BACKEND AINDA EM DESENVOLVIMENTO --
 
