@@ -1,7 +1,9 @@
 package dao;
 
-import classes.User;
 import java.util.List;
+
+import controllers.User;
+
 import java.util.ArrayList;
 
 public class UserDAO {
