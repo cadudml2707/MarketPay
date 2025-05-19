@@ -1,7 +1,9 @@
 package dao;
 
-import classes.Cliente;
 import java.util.List;
+
+import controllers.Cliente;
+
 import java.util.ArrayList;
 
 public class ClienteDAO {

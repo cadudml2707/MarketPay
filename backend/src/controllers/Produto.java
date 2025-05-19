@@ -1,4 +1,4 @@
-package classes;
+package controllers;
 
 public class Produto {
     

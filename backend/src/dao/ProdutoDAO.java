@@ -1,7 +1,9 @@
 package dao;
 
-import classes.Produto;
 import java.util.List;
+
+import controllers.Produto;
+
 import java.util.ArrayList;
 
 public class ProdutoDAO { 
