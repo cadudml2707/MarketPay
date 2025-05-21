@@ -1,5 +1,5 @@
 package services;
-import controllers.Produto;;
+import model.Produto;
 
 public class UserServices {
     
