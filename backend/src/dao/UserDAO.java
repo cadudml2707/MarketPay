@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import controllers.User;
+import model.User;
 
 import java.util.ArrayList;
 

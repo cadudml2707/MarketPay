@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-import controllers.Produto;
+import model.Produto;
 
 import java.util.ArrayList;
 
