@@ -2,21 +2,21 @@ package dao;
 
 import java.util.List;
 
-import controllers.Produto;
+import model.Produto;
 
 import java.util.ArrayList;
 
 public class ProdutoDAO { 
     
-    private List<Produto> produtos = new ArrayList<>();
+    protected List<Produto> estoque = new ArrayList<>();
 
     public void novoProduto(String nome, int codigo, float preco, int quantidade) {
         Produto produto = new Produto(nome, codigo, preco, quantidade);
-        produtos.add(produto);
+        estoque.add(produto);
     }
     
-    public void buscarProduto(int codigo){
-        for(Produto produto : produtos){
+    public void buscarProduto(int codigo){ 
+        for(Produto produto : estoque){
             if(produto.getCodigo() == codigo){
                 produto.getNome();
                 produto.getPreco();
@@ -26,7 +26,7 @@ public class ProdutoDAO {
     }
 
     public void atualizarProduto(String nome, int codigo, float preco, int quantidade){
-        for(Produto produto : produtos){
+        for(Produto produto : estoque){
             if(produto.getCodigo() == codigo){
                 produto.setNome(nome);
                 produto.setPreco(preco);
@@ -36,7 +36,7 @@ public class ProdutoDAO {
     }
 
     public void deletarProduto(int codigo){
-        produtos.removeIf(produto -> produto.getCodigo() == codigo);
+        estoque.removeIf(produto -> produto.getCodigo() == codigo);
     }
 
 }
