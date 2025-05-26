@@ -50,8 +50,16 @@ cd ..
 ```
 cd backend
 ```
+Para iniciar o servidor, execute os seguintes comandos:
+```
+javac -d out src/*.java src/routers/*.java
+```
+```
+java -cp out App
+```
+E então acesse o link: http://localhost:8000/
 
--- CONFIGURAÇÕES DO BACKEND AINDA EM DESENVOLVIMENTO --
+Para Finalizar o programa, digite ctrl+c no terminal.
 
 ## 👨🏻‍💻 Nota do Desenvolvedor
 
