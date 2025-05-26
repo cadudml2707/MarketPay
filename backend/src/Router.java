@@ -7,5 +7,8 @@ public class Router {
         
         server.createContext("/", new HomeRouter());
         server.createContext("/users", new UserRouter());
+        server.createContext("/produto", new ProdutoRouter());
+        server.createContext("/cliente", new ClienteRouter());
+        server.createContext("/venda", new VendaRouter());
     }
 }
