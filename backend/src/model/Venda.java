@@ -24,12 +24,24 @@ public class Venda {
         return id;
     }
 
+    public LocalDateTime getData(){
+        return dataCompra;
+    }
+
     public float getTotal(){
         return total;
     }
 
     public int getQtdItens(){
         return qtd_itens;
+    }
+
+    public String getCliente(){
+        return cliente.getCpf();
+    }
+
+    public String getUser(){
+        return user.getEmail();
     }
 
     public void setId(int id){
