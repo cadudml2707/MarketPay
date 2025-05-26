@@ -43,14 +43,21 @@ cd frontend
 npm install
 ```
 
-Quando a instalação for finalizada, retorne à pasta raiz e selecione a pagina do backend:
+Quando a instalação for finalizada, execute o seguinte comando para subir o frontend:
+```
+npm run dev
+```
+
+E então acesso o link: http://localhost:5173/
+
+Após isso, em outra guia no terminal, retorne à pasta raiz e selecione a pagina do backend:
 ```
 cd ..
 ```
 ```
 cd backend
 ```
-Para iniciar o servidor, execute os seguintes comandos:
+Para subir o backend, execute os seguintes comandos:
 ```
 javac -d out src/*.java src/routers/*.java
 ```
@@ -59,7 +66,7 @@ java -cp out App
 ```
 E então acesse o link: http://localhost:8000/
 
-Para Finalizar o programa, digite ctrl+c no terminal.
+Para Finalizar o programa tanto no frontend quanto no backend, digite ctrl+c na guia de ambos.
 
 ## 👨🏻‍💻 Nota do Desenvolvedor
 
