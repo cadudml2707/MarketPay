@@ -1,9 +1,10 @@
 package model;
 
 public class ProdutoCarrinho {
+    
     private String nome;
     private int codigo;
-    private float preco; 
+    private float preco;
     private int quantidade;
 
     public ProdutoCarrinho(String nome, int codigo, float preco, int quantidade){
