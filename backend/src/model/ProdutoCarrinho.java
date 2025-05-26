@@ -1,13 +1,13 @@
-package controllers;
+package model;
 
-public class Produto {
+public class ProdutoCarrinho {
     
     private String nome;
     private int codigo;
     private float preco;
     private int quantidade;
 
-    public Produto(String nome, int codigo, float preco, int quantidade){
+    public ProdutoCarrinho(String nome, int codigo, float preco, int quantidade){
         this.nome=nome;
         this.codigo=codigo;
         this.preco=preco;
