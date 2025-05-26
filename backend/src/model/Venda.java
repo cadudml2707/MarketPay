@@ -11,9 +11,9 @@ public class Venda {
     private Cliente cliente;
     private User user;
 
-    public Venda(int id, float total, int qtd_itens, Cliente cliente, User user){
+    public Venda(int id, LocalDateTime dataCompra, float total, int qtd_itens, Cliente cliente, User user){
         this.id=id;
-        this.dataCompra=LocalDateTime.now();
+        this.dataCompra=dataCompra;
         this.total=total;
         this.qtd_itens=qtd_itens;
         this.cliente=cliente;
