@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class ClienteDAO {
     
-    List<Cliente> clientes = new ArrayList<>();
+    protected List<Cliente> clientes = new ArrayList<>();
 
-    public void novoCliente(String nome, String cpf, String telefone){
+    public void novoCliente(String nome, String cpf, String telefone){ 
         Cliente cliente = new Cliente(nome, cpf, telefone);
         clientes.add(cliente);
     }
