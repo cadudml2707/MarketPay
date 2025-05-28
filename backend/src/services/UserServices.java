@@ -43,5 +43,17 @@ public class UserServices extends UserDAO {
         System.out.println("Usuário não encontrado.");
     } 
     
-    
+    public void deletaUser(String email, String senha){
+        if(email == null || senha == null){
+            System.out.println("Erro: Nenhum campo pode ser nulo!");
+            return;
+        }
+        for(User user : users){
+            if(user.getEmail().equals(email) && user.getSenha().equals(senha)){
+                deletarUser(email, senha);
+                return;
+            } 
+        }
+        System.out.println("Erro: Email inválido");
+    }
 }
