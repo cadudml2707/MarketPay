@@ -8,24 +8,22 @@ import java.util.ArrayList;
 
 public class UserDAO {
     
-    private List<User> users = new ArrayList<>();
+    protected static List<User> users = new ArrayList<>();
 
-    public void novoUser(String nome, String email, String senha, String tipo){
+    public static void novoUser(String nome, String email, String senha, String tipo){
         User user = new User(nome, email, senha, tipo);
         users.add(user);
     }
 
-    public void buscaruser(String email, String senha){
+    public void verUsers(){
         for(User user : users){
-            if(email == user.getEmail() && senha == user.getSenha()){
-                user.getNome();
-                user.getEmail();
-                user.getSenha();
-                user.getTipo();
-            }
+            user.getNome();
+            user.getEmail();
+            user.getSenha();
+            user.getTipo();
         }
     }
-
+    
     public void atualizarUser(String nome, String email, String senha, String tipo){
         for(User user : users){
             if(email == user.getEmail() && senha == user.getSenha()){

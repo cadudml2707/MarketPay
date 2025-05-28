@@ -16,6 +16,15 @@ public class UserRouter implements HttpHandler {
             case "GET":
                 response = "Você usou GET (Listar usuários)";
                 break;
+            case "POST":
+                response = "Você usou POST (Criar Usuário)";
+                break;
+            case "PUT":
+                response = "Você usou PUT (Atualizar Usuário)";
+                break;
+            case "DELETE":
+                response = "Você usou DELETE (Deletar Usuário)";
+                break;
         }
 
         exchange.sendResponseHeaders(200, response.length());
