@@ -15,13 +15,12 @@ public class ProdutoDAO {
         estoque.add(produto);
     }
     
-    public void buscarProduto(int codigo){ 
+    public void verProdutos(){ 
         for(Produto produto : estoque){
-            if(produto.getCodigo() == codigo){
-                produto.getNome();
-                produto.getPreco();
-                produto.getQuantidade();
-            }
+            produto.getCodigo();
+            produto.getNome();
+            produto.getPreco();
+            produto.getQuantidade();
         }
     }
 
