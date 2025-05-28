@@ -35,8 +35,13 @@ public class UserServices extends UserDAO {
         }
         for(User user : users){
             if(user.getEmail().equals(email)){
-                
+                atualizarUser(nome, email, senha, tipo);
+                System.out.println("Usuário cadastrado com sucesso!");
+                return;
             }
         }
-    }   
+        System.out.println("Usuário não encontrado.");
+    } 
+    
+    
 }
