@@ -16,14 +16,14 @@ public class UserServices extends UserDAO {
                 return;
             }
         }
-        if(!tipo.equals(tipo) || !tipo.equals(tipo)){
+        if(!tipo.equals("gerente") || !tipo.equals("caixa")){
             System.out.println("Erro: Tipo inválido de Usuário!");
             return;
         }
         novoUser(nome, email, senha, tipo);
         System.out.println("Usuário cadastrado com sucesso!");
     }
-
+    
     public void visualizarUser(String email, String senha){
         verUsers();
     }
@@ -41,7 +41,7 @@ public class UserServices extends UserDAO {
             }
         }
         System.out.println("Usuário não encontrado.");
-    } 
+    }
     
     public void deletaUser(String email, String senha){
         if(email == null || senha == null){
