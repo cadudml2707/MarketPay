@@ -33,7 +33,7 @@ public class VendaDAO extends ProdutoDAO {
         int venda_id = vendas.size() + 1;
         LocalDateTime dataCompra = LocalDateTime.now();
         float vendaTotal = 0;
-        int vendaQuantidade = 0;
+        int vendaQuantidade = 0; 
 
         // Objetos temporários para teste
         User user = new User("Eduardo", "teste@gmail.com", "123456", "vendedor");
