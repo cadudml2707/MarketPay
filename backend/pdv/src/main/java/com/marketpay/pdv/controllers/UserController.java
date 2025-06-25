@@ -19,7 +19,7 @@ public class UserController extends UserServices {
     
     @GetMapping("/listar")
     public String listarUsers(){
-        return "todos os usuários";
+        return "usuários";
     }
     
     @PostMapping("/cadastrar")
