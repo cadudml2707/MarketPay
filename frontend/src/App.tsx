@@ -1,4 +1,3 @@
-
 import { AppRoutes } from "./routers/AppRoutes";
 
 export function App() {
@@ -7,3 +6,4 @@ export function App() {
     <AppRoutes/>
   )
 }
+
