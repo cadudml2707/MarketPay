@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 
 export function Login() {
     return (
-        <div className="flex bg-[#424b50] justify-center items-center h-dvh">
-            <div className="flex bg-white w-full max-w-4xl">
-                <img src={Logo} alt="logo-market-pay" className='h-*' />
-                <div className='flex flex-col justify-center w-full p-6 gap-5'>
+        <div className="flex bg-[#363b3d] justify-center items-center h-dvh">
+            <div className="flex bg-white w-full max-w-4xl rounded-md">
+                <img src={Logo} alt="logo-market-pay" className='h-* rounded-l-md' />
+                <div className='flex flex-col justify-center w-full p-8 gap-6'>
                     <div className='text-center w-full'>
-                        <Label className='text-4xl font-bold'>Login</Label>
+                        <Label className='text-3xl font-bold'>Bem-vindo (a) ao MarketPay!</Label>
                     </div>
                     <div className='flex flex-col gap-1'>
                         <Label htmlFor='email'>Email</Label>
@@ -20,7 +20,7 @@ export function Login() {
                         <Label htmlFor='password'>Senha</Label>
                         <Input type='password' placeholder='Informe sua Senha' />
                     </div>
-                    <Button className='bg-[#45cfef] hover:bg-[#45cfef] w-full'>Entrar</Button>
+                    <Button className='bg-[#45cfef] hover:bg-[#4abfdb] w-full cursor-pointer'>Entrar</Button>
                 </div>
             </div>
         </div>
