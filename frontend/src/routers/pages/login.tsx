@@ -9,7 +9,7 @@ export function Login() {
 
     function handlelogin() {
         //TODO: ADICIONAR VALIDAÇÕES DO BACKEND
-        navigate('/menu');
+        navigate('/venda');
     }
 
     return (
