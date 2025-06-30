@@ -2,8 +2,16 @@ import Logo from '../../assets/img-marketpay.svg';
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from 'react-router-dom';
 
 export function Login() {
+    const navigate = useNavigate();
+
+    function handlelogin() {
+        //TODO: ADICIONAR VALIDAÇÕES DO BACKEND
+        navigate('/menu');
+    }
+
     return (
         <div className="flex bg-[#363b3d] justify-center items-center h-dvh">
             <div className="flex bg-white w-full max-w-4xl rounded-md">
@@ -20,7 +28,12 @@ export function Login() {
                         <Label htmlFor='password'>Senha</Label>
                         <Input type='password' placeholder='Informe sua Senha' />
                     </div>
-                    <Button className='bg-[#45cfef] hover:bg-[#4abfdb] w-full cursor-pointer'>Entrar</Button>
+                    <Button
+                        className='bg-[#45cfef] hover:bg-[#4abfdb] w-full cursor-pointer'
+                        onClick={handlelogin}
+                    >
+                        Entrar
+                    </Button>
                 </div>
             </div>
         </div>
