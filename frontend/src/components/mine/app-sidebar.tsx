@@ -37,12 +37,12 @@ export function AppSidebar() {
     {
       icon: UsersRound,
       label: "Clientes",
-      path: " ",
+      path: "/clientes",
     },
     {
       icon: Clock,
       label: "Histórico",
-      path: "",
+      path: "/historico",
     },
   ];
 
@@ -50,7 +50,7 @@ export function AppSidebar() {
     <div
       className={cn(
         "relative h-screen bg-[#424b50] text-white border-r border-[#2e3438] transition-all duration-300",
-        collapsed ? "w-16" : "w-64"
+        collapsed ? "w-16" : "w-64" //64 original
       )}
     >
       {/* Topo com logo e botão de colapsar */}
