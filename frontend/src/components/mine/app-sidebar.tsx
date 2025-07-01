@@ -11,7 +11,6 @@ import {
   UsersRound,
   Clock,
   Menu,
-  CheckSquare,
 } from "lucide-react";
 
 export function AppSidebar() {
@@ -38,12 +37,12 @@ export function AppSidebar() {
     {
       icon: UsersRound,
       label: "Clientes",
-      path: "/clientes",
+      path: " ",
     },
     {
       icon: Clock,
       label: "Histórico",
-      path: "/historico",
+      path: "",
     },
   ];
 
