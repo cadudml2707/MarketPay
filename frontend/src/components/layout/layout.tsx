@@ -3,11 +3,11 @@ import { AppSidebar } from "@/components/mine/app-sidebar";
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <SidebarProvider className="bg-[#424b50] text-white">
+    <SidebarProvider className="flex bg-[#424b50] text-white">
       <AppSidebar />
-      <main>
+      <main className="flex-1">
         {children}
-      </main>
+      </main> 
     </SidebarProvider>
   )
 }

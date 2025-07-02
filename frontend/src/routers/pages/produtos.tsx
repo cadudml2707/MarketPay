@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import Layout from "../../components/layout/layout"
 
 import {
@@ -11,25 +10,27 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
+import CadastraProduto from "../../components/Modal/cadastraProduto";
+
 export function Produtos() {
   return (
     <Layout>
-      <div className="flex flex-col p-10">
-        <div className="flex content-between">
+      <div className="flex flex-col p-10 gap-2">
+        <div className="flex justify-between items-center">
           <h1 className="text-white font-bold text-2xl mb-5">Produtos</h1>
-          <Button className="bg-[#45cfef] hover:bg-[#45cfe0] cursor-pointer">Novo Produto</Button>
+          <CadastraProduto />
         </div>
 
         {/* Wrapper para tornar a tabela responsiva */}
         <div className="overflow-x-auto w-full bg-white rounded-md shadow">
-          <Table className="min-w-[600px]">
+          <Table>
             <TableCaption>Lista de Produtos Cadastrados.</TableCaption>
-            <TableHeader>
+            <TableHeader className="bg-[#363b3d]">
               <TableRow>
-                <TableHead className="w-[100px]">Código</TableHead>
-                <TableHead>Nome</TableHead>
-                <TableHead className="w-[40px]">Quantidade</TableHead>
-                <TableHead className="w-[100px]">Preço</TableHead>
+                <TableHead className="w-[100px] text-white">Código</TableHead>
+                <TableHead className="text-white">Nome</TableHead>
+                <TableHead className="w-[40px] text-white">Quantidade</TableHead>
+                <TableHead className="w-[100px] text-white">Preço</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
