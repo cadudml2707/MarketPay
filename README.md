@@ -11,12 +11,14 @@ Este sistema feito em Java e Typescript é uma aplicação web que executa funç
 * Frontend:
   * ReactJS
   * TypeScript
-  * Axios
-  * Primeflex.
+  * Tailwind
+  * Shadcn.ui
 * Backend:
   * Java
+  * Spring Boot
 * IDE:
-  * VS Code
+  * VS Code (Frontend)
+  * Netbeans (Backend)
 * Versinamento de Código:
   * Git
 
