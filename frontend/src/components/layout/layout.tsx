@@ -1,14 +1,13 @@
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/mine/app-sidebar";
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <SidebarProvider className="bg-[#424b50] text-white">
+    <SidebarProvider className="flex bg-[#424b50] text-white">
       <AppSidebar />
-      <main>
-        <SidebarTrigger />
+      <main className="flex-1">
         {children}
-      </main>
+      </main> 
     </SidebarProvider>
   )
 }
