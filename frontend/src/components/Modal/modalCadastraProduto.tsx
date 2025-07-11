@@ -30,15 +30,15 @@ export default function cadastraProduto(){
                 </DialogHeader>
                 <div className="grid gap-4">
                   <div className="grid gap-3">
-                    <Label htmlFor="name-1">Nome</Label>
+                    <Label htmlFor="name-1">Nome <span className="text-[#FF0000]">*</span></Label>
                     <Input id="name-1" name="name" />
                   </div>
                   <div className="grid gap-3">
-                    <Label htmlFor="username-1">Quantidade</Label>
+                    <Label htmlFor="username-1">Quantidade <span className="text-[#FF0000]">*</span></Label>
                     <Input id="username-1" name="username" />
                   </div>
                   <div className="grid gap-3">
-                    <Label htmlFor="username-1">Preço</Label>
+                    <Label htmlFor="username-1">Preço <span className="text-[#FF0000]">*</span></Label>
                     <Input id="username-1" name="username" />
                   </div>
                 </div>

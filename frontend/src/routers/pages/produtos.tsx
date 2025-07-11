@@ -10,7 +10,8 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
-import CadastraProduto from "../../components/Modal/cadastraProduto";
+import ModalCadastraProduto from "../../components/Modal/modalCadastraProduto";
+import ModalEditaProduto from "@/components/Modal/modalEditaProduto";
 
 export function Produtos() {
   return (
@@ -18,19 +19,18 @@ export function Produtos() {
       <div className="flex flex-col p-10 gap-2">
         <div className="flex justify-between items-center">
           <h1 className="text-white font-bold text-2xl mb-5">Produtos</h1>
-          <CadastraProduto />
+          <ModalCadastraProduto />
         </div>
-
-        {/* Wrapper para tornar a tabela responsiva */}
         <div className="overflow-x-auto w-full bg-white rounded-md shadow">
           <Table>
             <TableCaption>Lista de Produtos Cadastrados.</TableCaption>
             <TableHeader className="bg-[#363b3d]">
               <TableRow>
-                <TableHead className="w-[100px] text-white">Código</TableHead>
+                <TableHead className="w-[10rem] text-white">Código</TableHead>
                 <TableHead className="text-white">Nome</TableHead>
-                <TableHead className="w-[40px] text-white">Quantidade</TableHead>
-                <TableHead className="w-[100px] text-white">Preço</TableHead>
+                <TableHead className="text-white">Quantidade</TableHead>
+                <TableHead className="text-white">Preço</TableHead>
+                <TableHead className="text-white">Ações</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -39,8 +39,10 @@ export function Produtos() {
                 <TableCell>Batata</TableCell>
                 <TableCell>24</TableCell>
                 <TableCell>R$3.00</TableCell>
+                <TableCell>
+                  <ModalEditaProduto />
+                </TableCell>
               </TableRow>
-              {/* Outros rows podem vir aqui */}
             </TableBody>
           </Table>
         </div>
