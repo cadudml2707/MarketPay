@@ -10,6 +10,8 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
+import { Switch } from "@/components/ui/switch"
+
 import ModalCadastraUser from "../../components/Modal/modalCadastraUser";
 import ModalEditaUser from "@/components/Modal/modalEditaUser";
 
@@ -35,8 +37,9 @@ export function Users() {
                             <TableRow className="text-[#000000]">
                                 <TableCell>CARLOS EDUARDO DIAS MESSIAS DE LIMA</TableCell>
                                 <TableCell>carlos.dev@marketpay.com</TableCell>
-                                <TableCell>
+                                <TableCell className="flex items-center gap-5">
                                     <ModalEditaUser />
+                                    <Switch className="cursor-pointer"/>
                                 </TableCell>
                             </TableRow>
                         </TableBody>

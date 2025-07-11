@@ -41,7 +41,7 @@ export function Clientes() {
                 <TableCell>(00) 00000-0000</TableCell>
                 <TableCell className="flex items-center gap-5">
                   <ModalEditaCliente />
-                  <Switch />
+                  <Switch className="cursor-pointer"/>
                 </TableCell>
               </TableRow>
             </TableBody>

@@ -13,6 +13,7 @@ import {
 
 import { Label } from "@radix-ui/react-label"
 import { Input } from "../ui/input";
+import { Checkbox } from "@/components/ui/checkbox"
 
 export default function cadastraCliente() {
   return (
@@ -44,6 +45,10 @@ export default function cadastraCliente() {
             <div className="grid gap-3">
               <Label htmlFor="username-1">Confirmar Senha <span className="text-[#FF0000]">*</span></Label>
               <Input id="username-1" name="confirmaSenha" />
+            </div>
+            <div className="flex items-center gap-2">
+              <Checkbox className="color-[#FF0000]" />
+              <span className="size-[20px]">Gerente</span>
             </div>
           </div>
           <DialogFooter>
