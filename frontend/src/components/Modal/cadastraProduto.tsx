@@ -46,7 +46,7 @@ export default function cadastraProduto(){
                   <DialogClose asChild>
                     <Button variant="outline" className="border-[#45cfef] text-[#45cfef] bg-[#363b3d] hover:bg-[#45cfe0]">Cancelar</Button>
                   </DialogClose>
-                  <Button type="submit" className="bg-[#45cfef] hover:bg-[#45cfe0] cursor-pointer">Cadastro</Button>
+                  <Button type="submit" className="bg-[#45cfef] hover:bg-[#45cfe0] cursor-pointer">Cadastrar</Button>
                 </DialogFooter>
               </DialogContent>
             </form>
