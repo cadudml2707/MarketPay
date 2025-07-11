@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/table"
 
 import ModalCadastraCliente from "../../components/Modal/modalCadastraCliente";
+import ModalEditaCliente from "../../components/Modal/modalEditaCliente";
 
 export function Clientes() {
   return (
@@ -18,7 +19,7 @@ export function Clientes() {
       <div className="flex flex-col p-10 gap-2">
         <div className="flex justify-between items-center">
           <h1 className="text-white font-bold text-2xl mb-5">Clientes</h1>
-          <ModalCadastraCliente/>
+          <ModalCadastraCliente />
         </div>
         <div className="overflow-x-auto w-full bg-white rounded-md shadow">
           <Table>
@@ -28,6 +29,7 @@ export function Clientes() {
                 <TableHead className="text-white">Nome</TableHead>
                 <TableHead className="text-white">CPF</TableHead>
                 <TableHead className="text-white">Telefone</TableHead>
+                <TableHead className="text-white">Ações</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -35,6 +37,7 @@ export function Clientes() {
                 <TableCell>CARLOS EDUARDO DIAS MESSIAS DE LIMA</TableCell>
                 <TableCell>000.000.000-00</TableCell>
                 <TableCell>(00) 00000-0000</TableCell>
+                <TableCell><ModalEditaCliente /></TableCell>
               </TableRow>
             </TableBody>
           </Table>
