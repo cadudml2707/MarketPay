@@ -10,6 +10,8 @@ import {
   TableRow,
 } from "@/components/ui/table"
 
+import { Switch } from "@/components/ui/switch"
+
 import ModalCadastraCliente from "../../components/Modal/modalCadastraCliente";
 import ModalEditaCliente from "../../components/Modal/modalEditaCliente";
 
@@ -37,7 +39,10 @@ export function Clientes() {
                 <TableCell>CARLOS EDUARDO DIAS MESSIAS DE LIMA</TableCell>
                 <TableCell>000.000.000-00</TableCell>
                 <TableCell>(00) 00000-0000</TableCell>
-                <TableCell><ModalEditaCliente /></TableCell>
+                <TableCell className="flex items-center gap-5">
+                  <ModalEditaCliente />
+                  <Switch />
+                </TableCell>
               </TableRow>
             </TableBody>
           </Table>
