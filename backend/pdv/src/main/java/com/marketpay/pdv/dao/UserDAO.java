@@ -15,8 +15,8 @@ import java.util.List;
 public class UserDAO {
     protected static List<User> users = new ArrayList<>();
 
-    public static void novoUser(String nome, String email, String senha, String tipo){
-        User user = new User(nome, email, senha, tipo);
+    public static void novoUser(String nome, String email, String senha, String tipo, boolean ativo){
+        User user = new User(nome, email, senha, tipo, ativo);
         users.add(user);
     }
 
@@ -26,16 +26,18 @@ public class UserDAO {
             user.getEmail();
             user.getSenha();
             user.getTipo();
+            user.getAtivo();
         }
     }
     
-    public void atualizarUser(String nome, String email, String senha, String tipo){
+    public void atualizarUser(String nome, String email, String senha, String tipo, boolean ativo){
         for(User user : users){
             if(email == user.getEmail() && senha == user.getSenha()){
                 user.setNome(nome);
                 user.setEmail(email);
                 user.setSenha(senha);
                 user.setTipo(tipo);
+                user.setAtivo(ativo);
             }
         }
     }

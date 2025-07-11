@@ -8,11 +8,13 @@ public class Cliente {
     private String nome;
     private String cpf;
     private String telefone;
+    private boolean ativo;
 
-    public Cliente(String nome, String cpf, String telefone){ 
+    public Cliente(String nome, String cpf, String telefone, boolean ativo){ 
         this.nome=nome;
         this.cpf=cpf;
         this.telefone=telefone;
+        this.ativo=ativo;
     }
 
     public String getNome(){
@@ -27,6 +29,10 @@ public class Cliente {
         return telefone;
     }
 
+    public boolean getAtivo(){
+        return ativo;
+    }
+
     public void setNome(String nome){
         this.nome=nome;
     }
@@ -37,5 +43,9 @@ public class Cliente {
 
     public void setTelefone(String telefone){
         this.telefone=telefone;
+    }
+
+    public void setAtivo(boolean ativo){
+        this.ativo=ativo;
     }
 }

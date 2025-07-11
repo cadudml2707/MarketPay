@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class ClienteDAO {
     protected List<Cliente> clientes = new ArrayList<>();
 
-    public void novoCliente(String nome, String cpf, String telefone){ 
-        Cliente cliente = new Cliente(nome, cpf, telefone);
+    public void novoCliente(String nome, String cpf, String telefone, boolean ativo){ 
+        Cliente cliente = new Cliente(nome, cpf, telefone, ativo);
         clientes.add(cliente);
     }
 
@@ -25,15 +25,17 @@ public class ClienteDAO {
             cliente.getNome();
             cliente.getCpf();
             cliente.getTelefone();
+            cliente.getAtivo();
         }
     }
 
-    public void atualizarCliente(String nome, String cpf, String telefone){
+    public void atualizarCliente(String nome, String cpf, String telefone, boolean ativo){
         for(Cliente cliente : clientes){
             if(cliente.getCpf() == cpf){
                 cliente.setNome(nome);
                 cliente.setCpf(cpf);
                 cliente.setTelefone(telefone);
+                cliente.setAtivo(ativo);
             }
         }
     }

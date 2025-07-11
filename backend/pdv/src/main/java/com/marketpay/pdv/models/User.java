@@ -14,12 +14,14 @@ public class User {
     private String email;
     private String senha;
     private String tipo;
+    private boolean ativo;
 
-    public User(String nome, String email, String senha, String tipo){
+    public User(String nome, String email, String senha, String tipo, boolean ativo){
         this.nome=nome;
         this.email=email;
         this.senha=senha;
         this.tipo=tipo;
+        this.ativo=ativo;
     }
 
     public String getNome(){
@@ -38,6 +40,10 @@ public class User {
         return tipo;
     }
 
+    public boolean getAtivo(){
+        return ativo;
+    }
+
     public void setNome(String nome){
         this.nome=nome;
     }
@@ -52,5 +58,9 @@ public class User {
 
     public void setTipo(String tipo){
         this.tipo=tipo;
+    }
+
+    public void setAtivo(boolean ativo){
+        this.ativo=ativo;
     }
 }
