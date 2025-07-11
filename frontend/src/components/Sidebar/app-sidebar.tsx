@@ -86,7 +86,7 @@ export function AppSidebar() {
                 "w-full justify-start text-left cursor-pointer",
                 isActive
                   ? "bg-[#45cfef] text-white hover:bg-[#45cfe0]"
-                  : "text-white hover:bg-[#3a4044]",
+                  : "text-white hover:text-white hover:bg-[#3a4044]",
                 collapsed && "justify-center px-2"
               )}
               onClick={() => navigate(item.path)}
